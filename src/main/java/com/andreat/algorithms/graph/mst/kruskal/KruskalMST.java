@@ -1,7 +1,6 @@
-package com.andreat.algorithms.graph.mst;
+package com.andreat.algorithms.graph.mst.kruskal;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 

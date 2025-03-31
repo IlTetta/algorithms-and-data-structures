@@ -1,69 +1,111 @@
-# [Nome del Tuo Progetto]
-
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://example.com/build)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-## Descrizione del Progetto
-
-Questo progetto Java fornisce implementazioni di algoritmi di ricerca, ordinamento e strutture dati fondamentali. L'obiettivo è la comprensione e l'utilizzo in contesti dove queste implementazioni di base sono necessarie.
-
-## Funzionalità Implementate
-
-### Algoritmi di Ricerca
-
-* **Ricerca Binaria (Binary Search)** (Implementazione iterativa e ricorsiva)
-* **Ricerca Lineare (Linear Search)**
-* **Jump Search**
-* **Interpolation Search**
-* **Exponential Search**
-* **Breath-First Search**
-* **Depth-First Search**
-* **Dijkstra**
-* **A\* (Ancora da implementare)**
-
-### Algoritmi di Ordinamento
-
-* **Quick Sort**
-* **Merge Sort**
-* **Heap Sort**
-* **Insertion Sort**
-* **Bubble Sort**
-* **Counting Sort**
-* **Radix Sort**
-
-### Strutture Dati
-
-* **Albero Binario di Ricerca (Binary Search Tree)**
-* **Grafo**
-* **Grafo (Matrice di Adiacenza)**
-* **Hash Map**
-* **Lista concatenata**
-* **Max Heap**
-* **Trie**
-* **Union Find**
-
-### Prerequisiti
-
-* Java Development Kit (JDK) installato (versione [specifica la versione minima richiesta])
-
-### Compilazione
-
-1.  Clona il repository:
-    ```bash
-    git clone [https://github.com/dserodio?tab=repositories](https://github.com/dserodio?tab=repositories)
-    ```
-2.  Naviga nella directory del progetto:
-    ```bash
-    cd [nome del tuo progetto]
-    ```
-3.  Compila i file Java. Puoi usare un IDE come IntelliJ IDEA o Eclipse, oppure compilare da riga di comando:
-    ```bash
-    javac src/**/*.java
-    ```
-
-### Esecuzione
-
-Per eseguire un esempio o un test specifico, puoi navigare nella directory `src` e lanciare la classe `main` desiderata:
-
-```bash
-java src/[percorso/della/tua/classe/Main].java
+├── graph
+│   ├── bfs
+│   │   └── BFS.java
+│   ├── dfs
+│   │   └── DFS.java
+│   ├── dijkstra
+│   │   └── Dijkstra.java
+│   ├── astar
+│   │   └── AStar.java
+│   ├── mst
+│   │   ├── kruskal
+│   │   │   └── KruskalMST.java
+│   │   └── prim
+│   │       └── PrimMST.java
+│   ├── shortestpath
+│   │   ├── bellmanford
+│   │   │   └── BellmanFord.java
+│   │   └── floydwarshall
+│   │       └── FloydWarshall.java
+│   ├── networkflow
+│   │   ├── fordfulkerson
+│   │   │   └── FordFulkerson.java
+│   │   └── edmondskarp
+│   │       └── EdmondsKarp.java
+│   ├── topologicalsort
+│   │   └── TopologicalSort.java
+│   └── scc
+│       ├── kosaraju
+│       │   └── KosarajuSCC.java
+│       └── tarjan
+│           └── TarjanSCC.java
+├── search
+│   ├── binarysearch
+│   │   ├── BinarySearch.java
+│   │   └── BinarySearchRecursive.java
+│   ├── linearsearch
+│   │   └── LinearSearch.java
+│   ├── jumpsearch
+│   │   └── JumpSearch.java
+│   ├── interpolationsearch
+│   │   └── InterpolationSearch.java
+│   └── exponentialsearch
+│       └── ExponentialSearch.java
+├── sort
+│   ├── quicksort
+│   │   └── QuickSort.java
+│   ├── mergesort
+│   │   └── MergeSort.java
+│   ├── heapsort
+│   │   └── HeapSort.java
+│   ├── insertionsort
+│   │   └── InsertionSort.java
+│   ├── bubblesort
+│   │   └── BubbleSort.java
+│   ├── countingsort
+│   │   └── CountingSort.java
+│   └── radixsort
+│       └── RadixSort.java
+├── string
+│   ├── patternmatching
+│   │   ├── kmp
+│   │   │   └── KMP.java
+│   │   ├── boyermoore
+│   │   │   └── BoyerMoore.java
+│   │   └── rabinkarp
+│   │       └── RabinKarp.java
+│   ├── lcs
+│   │   └── LCS.java
+│   └── editdistance
+│       └── EditDistance.java
+├── dynamicprogramming
+│   ├── rodcutting
+│   │   └── RodCutting.java
+│   ├── coinchange
+│   │   └── CoinChange.java
+│   ├── knapsack
+│   │   ├── zeroone
+│   │   │   └── ZeroOneKnapsack.java
+│   │   └── unbounded
+│   │       └── UnboundedKnapsack.java
+│   └── lis
+│       └── LIS.java
+├── greedy
+│   ├── activityselection
+│   │   └── ActivitySelection.java
+│   └── fractionalknapsack
+│       └── FractionalKnapsack.java
+├── divideandconquer
+│   ├── closestpair
+│   │   └── ClosestPair.java
+│   └── matrixmultiplication
+│       └── StrassenMultiplication.java
+├── geometry
+│   ├── convexhull
+│   │   ├── grahamscan
+│   │   │   └── GrahamScan.java
+│   │   └── andrewschain
+│   │   │   └── AndrewsMonotoneChain.java
+│   └── linesegmentintersection
+│       └── LineSegmentIntersection.java
+├── numbertheory
+│   ├── primalitytest
+│   │   └── MillerRabin.java
+│   ├── gcd
+│   │   └── EuclideanAlgorithm.java
+│   └── modularexponentiation
+│       └── ModularExponentiation.java
+└── util (opzionale)
+├── GraphNode.java
+├── TreeNode.java
+└── ... (altre classi di utilità)
